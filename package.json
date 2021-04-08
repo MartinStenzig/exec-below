@@ -1,0 +1,26 @@
+{
+  "name": "exec-below",
+  "version": "1.0.0",
+  "description": "Executes commands in nested directories",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MartinStenzig/exec-below.git"
+  },
+  "keywords": [
+    "npm",
+    "run",
+    "nested",
+    "directories",
+    "execute"
+  ],
+  "author": "Martin Stenzig",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MartinStenzig/exec-below/issues"
+  },
+  "homepage": "https://github.com/MartinStenzig/exec-below#readme"
+}
