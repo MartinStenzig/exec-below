@@ -3,8 +3,14 @@ const mkdirp = require('mkdirp');
 const rimraf = require('rimraf');
 const write = require('write');
 
-cleanupDirectoryStructure(createDirectoryStructure());
+executeTests();
 
+function executeTests() {
+
+    cleanupDirectoryStructure();
+
+    createDirectoryStructure()
+}
 
 
 
@@ -25,8 +31,8 @@ function createDirectoryStructure() {
 
     Promise.all(promiseList).then((returnValues) => {
 
-           console.log('Return values', returnValues);
-            createFilesInDirectories();
+        console.log('Return values', returnValues);
+        createFilesInDirectories();
     });
 
 }
@@ -40,14 +46,7 @@ function createFilesInDirectories() {
     write.sync('./testDir/input/testDir4Files/File5.txt', 'Content of file 5', { overwrite: false });
 }
 
-function cleanupDirectoryStructure(followOnFunction) {
-    rimraf('./testDir', (error) => {
-        if (error != null) {
-            console.error("Rimraf Error:", error)
-        }
-        else {
-            console.info('Cleanup concluded');
-            followOnFunction;
-        }
-    });
+function cleanupDirectoryStructure() {
+
+    rimraf.sync('./testDir');
 }
