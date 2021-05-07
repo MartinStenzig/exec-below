@@ -1,5 +1,5 @@
-"use strict";
+'use strict'
 
-const execbelow = require('./lib/exec-below');
+const execbelow = require('./lib/exec-below')
 
-module.exports = execbelow;
+module.exports = execbelow

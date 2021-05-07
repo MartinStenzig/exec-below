@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
+    "lint": "npx eslint .eslintrc.js index.js lib/** test/**",
+    "lint:fix": "npx eslint --fix .eslintrc.js index.js lib/** test/**",
     "test": "node test/index.js"
   },
   "repository": {
@@ -25,6 +27,11 @@
   },
   "homepage": "https://github.com/MartinStenzig/exec-below#readme",
   "devDependencies": {
+    "eslint": "^7.25.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.3.1",
     "mkdirp": "^1.0.4",
     "rimraf": "^3.0.2",
     "write": "^2.0.0"
