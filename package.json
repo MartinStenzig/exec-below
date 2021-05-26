@@ -1,6 +1,6 @@
 {
   "name": "exec-below",
-  "version": "0.1.0",
+  "version": "0.5.0",
   "description": "Executes commands in nested directories",
   "main": "index.js",
   "bin": {
