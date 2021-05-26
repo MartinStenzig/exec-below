@@ -53,7 +53,7 @@ function checkResults() {
  */
 function executeBelowCommand() {
   // Run the functionality without parameters
-  return execbelow('npx bestzip', ['@PathToExecuteFrom@/../output/@DirectoryName@.zip', '*'], { verbose: true, processingDepth: 1, startingPath: path.join(__dirname, './../testDir/input') })
+  return execbelow('npx bestzip', ['@PathToExecuteFrom@/../output/@DirectoryName@.zip', '*'], { verbose: true, depth: 1, startPath: path.join(__dirname, './../testDir/input') })
 }
 
 /**
