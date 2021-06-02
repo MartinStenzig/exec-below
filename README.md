@@ -1,7 +1,7 @@
 # exec-below
 [![npm version](https://badge.fury.io/js/exec-below.svg)](https://badge.fury.io/js/exec-below)
 [![npm downloads](https://img.shields.io/npm/dm/exec-below)](https://www.npmjs.com/package/exec-below)
-
+![GitHub CodeQL Check](https://github.com/MartinStenzig/exec-below/actions/workflows/codeql-analysis.yml/badge.svg)
 This module provides a `exec-below` command that opens a shell in recursively in every directory below the current directory and executes the specified command.  
 
 ## Why? 
