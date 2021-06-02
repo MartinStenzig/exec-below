@@ -8,6 +8,7 @@
   },
   "scripts": {
     "start": "node index.js",
+    "build": "npm run lint",
     "lint": "npx eslint .eslintrc.js index.js lib/** test/**",
     "lint:fix": "npx eslint --fix .eslintrc.js index.js lib/** test/**",
     "test": "node node_modules/mocha/bin/mocha",
