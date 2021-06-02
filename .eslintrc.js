@@ -4,13 +4,25 @@ module.exports = {
     commonjs: true,
     es2021: true
   },
+  plugins: [
+    'mocha'
+  ],
   extends: [
-    'standard'
+    'standard',
+    'plugin:mocha/recommended'
   ],
   parserOptions: {
     ecmaVersion: 12
   },
   rules: {
-    'space-before-function-paren': 0
+    'space-before-function-paren': 0,
+    'mocha/no-skipped-tests': 'error',
+    'mocha/no-exclusive-tests': 'error'
+  },
+  settings: {
+    'mocha/additionalCustomNames': [
+      { name: 'describeModule', type: 'suite', interfaces: ['BDD'] },
+      { name: 'testModule', type: 'testCase', interfaces: ['TDD'] }
+    ]
   }
 }

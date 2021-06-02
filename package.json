@@ -10,7 +10,7 @@
     "start": "node index.js",
     "lint": "npx eslint .eslintrc.js index.js lib/** test/**",
     "lint:fix": "npx eslint --fix .eslintrc.js index.js lib/** test/**",
-    "test": "node test/index.js",
+    "test": "node node_modules/mocha/bin/mocha",
     "test:cli": "node bin/cli.js"
   },
   "repository": {
@@ -34,9 +34,11 @@
     "eslint": "^7.25.0",
     "eslint-config-standard": "^16.0.2",
     "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-mocha": "^9.0.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.3.1",
     "mkdirp": "^1.0.4",
+    "mocha": "^8.4.0",
     "rimraf": "^3.0.2",
     "write": "^2.0.0"
   },

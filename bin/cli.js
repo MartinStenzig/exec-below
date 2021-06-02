@@ -15,7 +15,7 @@ const res = yargs(hideBin(process.argv))
   .option('depth', {
     alias: 'd',
     type: 'number',
-    description: 'Execution depth (default: 9999)'
+    description: 'Execution depth: 1 or greater (default: 9999)'
   })
   .option('startPath', {
     alias: 's',
