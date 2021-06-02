@@ -32,22 +32,15 @@ describe('exec-below', function () {
     })
 
     describe('checkPackingResults()', function () {
-      const pathTestDir0 = './testDir/input/testDir0/testDir0.zip'
       const pathTestDir1 = './testDir/input/testDir1/testDir1.zip'
       const pathTestDir11 = './testDir/input/testDir1/testDir11/testDir11.zip'
       const pathTestDir111 = './testDir/input/testDir1/testDir11/testDir111/testDir111.zip'
       const pathTestDir112 = './testDir/input/testDir1/testDir11/testDir112/testDir112.zip'
-      const pathTestDir113 = './testDir/input/testDir1/testDir11/testDir113/testDir113.zip'
       const pathTestDir12 = './testDir/input/testDir1/testDir12/testDir12.zip'
-      const pathTestDir2NoKids = './testDir/input/testDir2NoKids/testDir2NoKids.zip'
       const pathTestDir3 = './testDir/input/testDir3/testDir3.zip'
-      const pathTestDirVisible = './testDir/input/testDir3/testDirVisible/testDirVisible.zip'
       const pathTestDir4Files = './testDir/input/testDir4Files/testDir4Files.zip'
       const pathInput = './testDir/input/input.zip'
 
-      it('packed testDir0 into ' + pathTestDir0, function () {
-        assert.strictEqual(true, fs.existsSync(pathTestDir0))
-      })
       it('packed testDir1 into ' + pathTestDir1, function () {
         assert.strictEqual(true, fs.existsSync(pathTestDir1))
       })
@@ -60,20 +53,11 @@ describe('exec-below', function () {
       it('packed testDir112 into ' + pathTestDir112, function () {
         assert.strictEqual(true, fs.existsSync(pathTestDir112))
       })
-      it('packed testDir113 into ' + pathTestDir113, function () {
-        assert.strictEqual(true, fs.existsSync(pathTestDir113))
-      })
       it('packed testDir12 into ' + pathTestDir12, function () {
         assert.strictEqual(true, fs.existsSync(pathTestDir12))
       })
-      it('packed testDir2NoKids into ' + pathTestDir2NoKids, function () {
-        assert.strictEqual(true, fs.existsSync(pathTestDir2NoKids))
-      })
       it('packed testDir3 into ' + pathTestDir3, function () {
         assert.strictEqual(true, fs.existsSync(pathTestDir3))
-      })
-      it('packed testDirVisible into ' + pathTestDirVisible, function () {
-        assert.strictEqual(true, fs.existsSync(pathTestDirVisible))
       })
       it('packed testDir4Files into ' + pathTestDir4Files, function () {
         assert.strictEqual(true, fs.existsSync(pathTestDir4Files))
@@ -108,21 +92,13 @@ describe('exec-below', function () {
     })
 
     describe('checkPackingResults()', function () {
-      const pathTestDir0 = './testDir/output/testDir0.zip'
       const pathTestDir1 = './testDir/output/testDir1.zip'
-      const pathTestDir2NoKids = './testDir/output/testDir2NoKids.zip'
       const pathTestDir3 = './testDir/output/testDir3.zip'
       const pathTestDir4Files = './testDir/output/testDir4Files.zip'
       const pathInput = './testDir/output/input.zip'
 
-      it('packed testDir0 into ' + pathTestDir0, function () {
-        assert.strictEqual(true, fs.existsSync(pathTestDir0))
-      })
       it('packed testDir1 into ' + pathTestDir1, function () {
         assert.strictEqual(true, fs.existsSync(pathTestDir1))
-      })
-      it('packed testDir2NoKids into ' + pathTestDir2NoKids, function () {
-        assert.strictEqual(true, fs.existsSync(pathTestDir2NoKids))
       })
       it('packed testDir3 into ' + pathTestDir3, function () {
         assert.strictEqual(true, fs.existsSync(pathTestDir3))
