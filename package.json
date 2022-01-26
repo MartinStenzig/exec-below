@@ -1,6 +1,6 @@
 {
   "name": "exec-below",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "Executes commands in nested directories",
   "main": "index.js",
   "bin": {
@@ -32,14 +32,15 @@
   },
   "homepage": "https://github.com/MartinStenzig/exec-below#readme",
   "devDependencies": {
-    "eslint": "^7.25.0",
+    "eslint": "^8.7.0",
     "eslint-config-standard": "^16.0.2",
     "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-mocha": "^9.0.0",
+    "eslint-plugin-mocha": "^10.0.3",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^4.3.1",
+    "eslint-plugin-promise": "^6.0.0",
+    "latest": "^0.2.0",
     "mkdirp": "^1.0.4",
-    "mocha": "^8.4.0",
+    "mocha": "^9.2.0",
     "rimraf": "^3.0.2",
     "write": "^2.0.0"
   },
