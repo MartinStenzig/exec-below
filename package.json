@@ -1,6 +1,6 @@
 {
   "name": "exec-below",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Executes commands in nested directories",
   "main": "index.js",
   "bin": {
@@ -30,6 +30,9 @@
   "bugs": {
     "url": "https://github.com/MartinStenzig/exec-below/issues"
   },
+  "engines" : { 
+    "node" : ">=12.0.0"
+  }
   "homepage": "https://github.com/MartinStenzig/exec-below#readme",
   "devDependencies": {
     "eslint": "^8.29.0",
