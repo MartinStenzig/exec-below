@@ -149,11 +149,20 @@ function createDirectoryStructure() {
 function createFilesInDirectories() {
   return new Promise((resolve, reject) => {
     const promiseList = []
-    write('./testDir/input/testDir1/testDir11/testDir111/File1.txt', 'Content of file 1', { overwrite: false })
-    write('./testDir/input/testDir1/testDir11/testDir111/File2.txt', 'Content of file 2', { overwrite: false })
-    write('./testDir/input/testDir1/testDir11/testDir112/File3.txt', 'Content of file 3', { overwrite: false })
-    write('./testDir/input/testDir1/testDir11/testDir112/File4.txt', 'Content of file 4', { overwrite: false })
+    write('./testDir/input/testDir0/File0.txt', 'Content of file 1', { overwrite: false })
+    write('./testDir/input/testDir1/testDir11/testDir111/File111-1.txt', 'Content of file 1', { overwrite: false })
+    write('./testDir/input/testDir1/testDir11/testDir111/File111-2.txt', 'Content of file 2', { overwrite: false })
+    write('./testDir/input/testDir1/testDir11/testDir112/File112-1.txt', 'Content of file 3', { overwrite: false })
+    write('./testDir/input/testDir1/testDir11/testDir112/File112-2.txt', 'Content of file 4', { overwrite: false })
+    write('./testDir/input/testDir1/testDir11/testDir113/File112.txt', 'Content of file', { overwrite: false })
+    write('./testDir/input/testDir1/testDir12/testDir121/File121.txt', 'Content of file', { overwrite: false })
+    write('./testDir/input/testDir1/testDir12/testDir122/testDir1221/File1221.txt', 'Content of file', { overwrite: false })
+    write('./testDir/input/testDir2NoKids/File2nok.txt', 'Content of file', { overwrite: false })
+    write('./testDir/input/testDir3/.secret/Filesecret.txt', 'Content of file', { overwrite: false })
+    write('./testDir/input/testDir3/testDirVisible/Filesvisible.txt', 'Content of file', { overwrite: false })
+    write('./testDir/input/testDir3/testDirVisible/Filesvisible.txt', 'Content of file', { overwrite: false })
     write('./testDir/input/testDir4Files/File5.txt', 'Content of file 5', { overwrite: false })
+
     Promise.all(promiseList).then((returnValues) => {
       // console.log('-- Create Files - Resolved')
       resolve('Return values', returnValues)
