@@ -32,7 +32,7 @@
   },
   "engines" : { 
     "node" : ">=12.0.0"
-  }
+  },
   "homepage": "https://github.com/MartinStenzig/exec-below#readme",
   "devDependencies": {
     "eslint": "^8.29.0",
