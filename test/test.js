@@ -163,7 +163,6 @@ function createFilesInDirectories() {
     write('./testDir/input/testDir3/testDirVisible/Filesvisible.txt', 'Content of file', { overwrite: false })
     write('./testDir/input/testDir4Files/File5.txt', 'Content of file 5', { overwrite: false })
 
-
     Promise.all(promiseList).then((returnValues) => {
       // console.log('-- Create Files - Resolved')
       resolve('Return values', returnValues)
