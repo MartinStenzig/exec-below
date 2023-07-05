@@ -1,6 +1,5 @@
-
-const mkdirp = require('mkdirp')
-const rimraf = require('rimraf')
+const { mkdirp } = require('mkdirp')
+const { rimraf } = require('rimraf')
 const write = require('write')
 const fs = require('fs')
 const path = require('path')
@@ -8,6 +7,7 @@ const execbelow = require('../lib/exec-below')
 const assert = require('assert')
 
 describe('exec-below', function () {
+  this.timeout(10000)
   describe('exec-below', function () {
     before(async function () {
       console.log('-- Test Prep - Cleanup Directory Structure')
@@ -176,16 +176,6 @@ function createFilesInDirectories() {
  * Cleanup directory structure
  * @returns {Promise}
  */
-function cleanupDirectoryStructure() {
-  return new Promise((resolve, reject) => {
-    rimraf('./testDir', (error) => {
-      if (error === null) {
-        // console.log('-- Cleanup - Resolved')
-        resolve()
-      } else {
-        console.log('-- Cleanup - Error', error)
-        reject(error)
-      }
-    })
-  })
+async function cleanupDirectoryStructure() {
+  await rimraf('./testDir')
 }
