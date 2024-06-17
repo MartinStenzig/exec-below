@@ -8,6 +8,7 @@ const assert = require('assert')
 
 describe('exec-below', function () {
   this.timeout(10000)
+
   describe('exec-below', function () {
     before(async function () {
       console.log('-- Test Prep - Cleanup Directory Structure')
@@ -44,24 +45,31 @@ describe('exec-below', function () {
       it('packed testDir1 into ' + pathTestDir1, function () {
         assert.strictEqual(true, fs.existsSync(pathTestDir1))
       })
+
       it('packed testDir11 into ' + pathTestDir11, function () {
         assert.strictEqual(true, fs.existsSync(pathTestDir11))
       })
+
       it('packed testDir111 into ' + pathTestDir111, function () {
         assert.strictEqual(true, fs.existsSync(pathTestDir111))
       })
+
       it('packed testDir112 into ' + pathTestDir112, function () {
         assert.strictEqual(true, fs.existsSync(pathTestDir112))
       })
+
       it('packed testDir12 into ' + pathTestDir12, function () {
         assert.strictEqual(true, fs.existsSync(pathTestDir12))
       })
+
       it('packed testDir3 into ' + pathTestDir3, function () {
         assert.strictEqual(true, fs.existsSync(pathTestDir3))
       })
+
       it('packed testDir4Files into ' + pathTestDir4Files, function () {
         assert.strictEqual(true, fs.existsSync(pathTestDir4Files))
       })
+
       it('packed input into ' + pathInput, function () {
         assert.strictEqual(true, fs.existsSync(pathInput))
       })
@@ -100,12 +108,15 @@ describe('exec-below', function () {
       it('packed testDir1 into ' + pathTestDir1, function () {
         assert.strictEqual(true, fs.existsSync(pathTestDir1))
       })
+
       it('packed testDir3 into ' + pathTestDir3, function () {
         assert.strictEqual(true, fs.existsSync(pathTestDir3))
       })
+
       it('packed testDir4Files into ' + pathTestDir4Files, function () {
         assert.strictEqual(true, fs.existsSync(pathTestDir4Files))
       })
+
       it('packed input into ' + pathInput, function () {
         assert.strictEqual(true, fs.existsSync(pathInput))
       })
